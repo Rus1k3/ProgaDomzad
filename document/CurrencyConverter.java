@@ -3,9 +3,9 @@ import java.util.Scanner;
 public class dz {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Введите число: ");
+        System.out.print("Введите число");
         double n = scanner.nextDouble();
-        System.out.println("Округленное число: " + Math.round(n));
+        System.out.println("Округленное число" + Math.round(n));
     }
 }
 
@@ -13,7 +13,7 @@ public class dz {
 public class CurrencyConverter {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Введите количество долларов: ");
+        System.out.print("Введите доллары");
         double dollars = scanner.nextDouble();
 
         double pounds = dollars / 1.487;
@@ -21,10 +21,10 @@ public class CurrencyConverter {
         double marks = dollars / 0.584;
         double yen = dollars / 0.00955;
 
-        System.out.printf("Эквивалент в фунтах: %.2f\n", pounds);
-        System.out.printf("Эквивалент в франках: %.2f\n", francs);
-        System.out.printf("Эквивалент в марках: %.2f\n", marks);
-        System.out.printf("Эквивалент в йенах: %.2f\n", yen);
+        System.out.printf("Эквивалент в фунтах %.2f\n", pounds);
+        System.out.printf("Эквивалент в франках %.2f\n", francs);
+        System.out.printf("Эквивалент в марках %.2f\n", marks);
+        System.out.printf("Эквивалент в йенах %.2f\n", yen);
     }
 }
 
@@ -33,10 +33,10 @@ public class CurrencyConverter {
 public class CelsiusToFahrenheit {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Введите температуру в градусах Цельсия: ");
+        System.out.print("Введите температуру в Цельсияхь");
         double celsius = scanner.nextDouble();
         double fahrenheit = (celsius * 9 / 5) + 32;
-        System.out.printf("Эквивалент по Фаренгейту: %.2f\n", fahrenheit);
+        System.out.printf("Эквивалент по Фаренгейту%.2f\n", fahrenheit);
     }
 }
 
@@ -45,16 +45,16 @@ public class InvestmentCalculator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Введите начальный вклад: ");
+        System.out.print("Введите начальный вклад");
         double initialAmount = scanner.nextDouble();
-        System.out.print("Введите число лет: ");
+        System.out.print("Введите число лет");
         int years = scanner.nextInt();
-        System.out.print("Введите процентную ставку: ");
+        System.out.print("Введите процентную ставку");
         double interestRate = scanner.nextDouble();
 
         for (int i = 1; i <= years; i++) {
             initialAmount += initialAmount * (interestRate / 100);
-            System.out.printf("Через %d год(а) вы получите %.2f долларов.\n", i, initialAmount);
+            System.out.printf("Через %d год вы получите %.2f долларов.\n", i, initialAmount);
         }
     }
 }
@@ -74,7 +74,7 @@ public class EvenNumbers {
 public class EvenOddChecker {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Введите число: ");
+        System.out.print("Введите число");
         int n = scanner.nextInt();
         if (n % 2 == 0) {
             System.out.println("ДА");
@@ -88,7 +88,7 @@ public class EvenOddChecker {
 public class TicketCalculator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Введите количество поездок: ");
+        System.out.print("Введите количество поездок");
         int n = scanner.nextInt();
 
         int count60 = n / 60;
@@ -108,17 +108,17 @@ public class TicketCalculator {
 public class LinearEquationSolver {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Введите a: ");
+        System.out.print("Введите 1");
         int a = scanner.nextInt();
-        System.out.print("Введите b: ");
+        System.out.print("Введите 2");
         int b = scanner.nextInt();
 
         if (a == 0 && b == 0) {
-            System.out.println("INF");
+            System.out.println("");
         } else if (a == 0) {
-            System.out.println("NO");
+            System.out.println("НЕТ");
         } else {
-            System.out.println("Решение: " + (-b / (double) a));
+            System.out.println("Решение" + (-b / (double) a));
         }
     }
 }
@@ -126,7 +126,7 @@ public class LinearEquationSolver {
 public class FactorialCalculator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Введите натуральное число: ");
+        System.out.print("Введите натуральное число");
         int n = scanner.nextInt();
         int factorial = 1;
 
@@ -134,14 +134,14 @@ public class FactorialCalculator {
             factorial *= i;
         }
 
-        System.out.println("Факториал равен: " + factorial);
+        System.out.println("Факториал равен" + factorial);
     }
 }
 
 public class DigitSum {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Введите число: ");
+        System.out.print("Введите число");
         int number = scanner.nextInt();
         int sum = 0;
 
@@ -150,7 +150,7 @@ public class DigitSum {
             number /= 10;
         }
 
-        System.out.println("Сумма цифр: " + sum);
+        System.out.println("Сумма цифр" + sum);
     }
 }
 
@@ -158,9 +158,9 @@ public class DigitSum {
 public class EvenNumbersBetween {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Введите число a: ");
+        System.out.print("Введите число 1");
         int a = scanner.nextInt();
-        System.out.print("Введите число b: ");
+        System.out.print("Введите число 2");
         int b = scanner.nextInt();
 
         for (int i = a; i <= b; i++) {
@@ -174,25 +174,25 @@ public class EvenNumbersBetween {
 public class MaxNumber {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Введите число a: ");
+        System.out.print("Введите число 1");
         int a = scanner.nextInt();
-        System.out.print("Введите число b: ");
+        System.out.print("Введите число 2");
         int b = scanner.nextInt();
 
-        System.out.println("Наибольшее число: " + Math.max(a, b));
+        System.out.println("Наибольшее число" + Math.max(a, b));
     }
 }
 
 public class LeapYearChecker {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Введите год: ");
+        System.out.print("Введите год");
         int year = scanner.nextInt();
 
         if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
-            System.out.println("YES");
+            System.out.println("ДА");
         } else {
-            System.out.println("NO");
+            System.out.println("НЕТ");
         }
     }
 }
@@ -200,7 +200,7 @@ public class LeapYearChecker {
 public class SignFunction {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Введите число x: ");
+        System.out.print("Введите число");
         int x = scanner.nextInt();
 
         if (x > 0) {
@@ -217,10 +217,10 @@ public class SignFunction {
 public class ChangeCalculator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Введите стоимость товара (рубли и копейки): ");
+        System.out.print("Введите стоимость товара (рубли и копейки)");
         int a = scanner.nextInt();
         int b = scanner.nextInt();
-        System.out.print("Введите уплаченную сумму (рубли и копейки): ");
+        System.out.print("Введите уплаченную сумму (рубли и копейки)");
         int c = scanner.nextInt();
         int d = scanner.nextInt();
 
@@ -231,20 +231,20 @@ public class ChangeCalculator {
         int rubles = change / 100;
         int kopecks = change % 100;
 
-        System.out.printf("Сдача: %d руб. и %d коп.\n", rubles, kopecks);
+        System.out.printf("Сдача%d руб. и %d коп.\n", rubles, kopecks);
     }
 }
 
 public class IceCreamPurchase {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Введите количество шариков: ");
+        System.out.print("Введите количество шариков");
         int k = scanner.nextInt();
 
         if (k % 3 == 0 || k % 5 == 0 || (k % 3 == 2 && k >= 5)) {
-            System.out.println("YES");
+            System.out.println("да");
         } else {
-            System.out.println("NO");
+            System.out.println("нет");
         }
     }
 }
