@@ -1,7 +1,7 @@
 package laba3CODINGBAT;
 
 public class cbat {
-    //array 1 10 tasks
+    //array
     public boolean firstLast6(int[] nums) {
         return nums[0] == 6 || nums[nums.length - 1] == 6;
     }
@@ -52,7 +52,7 @@ public class cbat {
         return new int[] { a[1], b[1] };
     }
     
-   //string 1 task 10
+   //string
    
     public String helloName(String name) {
         return "Hello " + name + "!";
